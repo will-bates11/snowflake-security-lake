@@ -1,0 +1,5 @@
+# Ignore temporary files
+/tmp/
+__pycache__/
+logs/
+config.json

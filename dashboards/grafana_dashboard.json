@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "title": "Security Monitoring Dashboard",
+        "panels": [
+            {
+                "title": "Failed Login Attempts",
+                "type": "graph",
+                "targets": [
+                    {
+                        "query": "SELECT timestamp, COUNT(*) FROM security_logs WHERE event_type = 'failed_login' GROUP BY timestamp;"
+                    }
+                ]
+            }
+        ]
+    }
+}
